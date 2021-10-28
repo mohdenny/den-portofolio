@@ -4,12 +4,21 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      'height': {
-        '36rem': '36rem'
+      fontFamily: {
+        'orbitron': ['Orbitron-Bold'],
+        'roboto': ['Roboto-Medium'],
       },
-
-      'translate': {
-        '-28rem' : '-28rem'
+      height: {
+        '34rem': '34rem'
+      },
+      translate: {
+        '-28rem': '-28rem'
+      },
+      backgroundImage: {
+        'space-img': "url('/images/bg-image.png')"
+      },
+      backgroundColor: {
+        'dark': '#000000'
       }
     },
   },
