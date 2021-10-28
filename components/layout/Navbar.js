@@ -7,16 +7,16 @@ const navigation = [
     { name: 'Portofolio', href: '#', current: false },
     { name: 'Skills', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
-    { name: 'About', href: '#', current: false },
+    { name: 'About', href: '#', current: false }
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Navbar = () => {
+export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-dark">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -39,15 +39,16 @@ const Navbar = () => {
                                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                                         alt="Workflow"
                                     />
-                                    <img
-                                        className="hidden lg:block h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                                        alt="Workflow"
-                                    />
+                                    <div id="logo-with-text" className="flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        <p className="text-gray-100 font-orbitron">MOHDENNY</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-                                <div className="hidden sm:block">
+                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                                <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                         <a
@@ -91,5 +92,3 @@ const Navbar = () => {
         </Disclosure>
     )
 }
-
-export default Navbar;
