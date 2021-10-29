@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'orbitron': ['Orbitron-Bold'],
-        'roboto': ['Roboto-Medium'],
+        'orbitron': ['Orbitron'],
+        'roboto-medium': ['Roboto Medium'],
+        'roboto-regular': ['Roboto'],
       },
       height: {
         '34rem': '34rem'
