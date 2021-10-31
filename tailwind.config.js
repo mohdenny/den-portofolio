@@ -10,13 +10,14 @@ module.exports = {
         'roboto-regular': ['Roboto'],
       },
       height: {
-        '34rem': '34rem'
+        '36rem': '36rem'
       },
       translate: {
         '-28rem': '-28rem'
       },
       backgroundImage: {
-        'space-img': "url('/images/bg-image.png')"
+        'space-img': "url('/images/bg-image.png')",
+        'thumb-img': "url('/images/undraw_Landing_page.png')"
       },
       backgroundColor: {
         'dark': '#000000'

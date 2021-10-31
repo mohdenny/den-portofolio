@@ -1,13 +1,19 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { navigation, logo } from './config'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { motion } from 'framer-motion'
+import { pathVariants } from '../../../helpers/variants'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+    const router = useRouter()
+
     return (
         <Disclosure as="nav" className="bg-dark">
             {({ open }) => (
@@ -34,9 +40,26 @@ export default function Navbar() {
                                     />
                                     <div id="logo-with-text" className="flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="text-white h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            <motion.path 
+                                                strokeLinecap="round" 
+                                                strokeLinejoin="round" 
+                                                strokeWidth={2} 
+                                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+                                                variants={pathVariants}
+                                                initial="hidden"
+                                                animate="visible"
+                                            />
                                         </svg>
-                                        <p className="text-white ml-2 font-orbitron text-xl">{logo.text}</p>
+                                        <motion.div 
+                                            className="text-white ml-2 font-orbitron text-xl"
+                                            initial={{ y: -250 }}
+                                            animate={{
+                                                y: -1
+                                            }}
+                                            transition={{ delay: 0.2, type: "tween" }}
+                                        >
+                                            {logo.text}
+                                        </motion.div>
                                     </div>
                                 </div>
                             </div>
@@ -44,17 +67,21 @@ export default function Navbar() {
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className={classNames(
-                                            item.current ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                            'px-3 py-2 rounded-md text-sm font-roboto-regular'
-                                            )}
-                                            aria-current={item.current ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </a>
+                                        <Link href={item.href}>
+                                            <motion.a
+                                                key={item.name}
+                                                href={item.href}
+                                                className={classNames(
+                                                router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                'px-3 py-2 rounded-md text-sm font-roboto-regular'
+                                                )}
+                                                aria-current={router.asPath === item.href ? 'page' : undefined}
+                                                whileHover={{ scale: 1.1 }}
+                                                transition={{ type: "spring", stiffness: 300 }}
+                                            >
+                                                {item.name}
+                                            </motion.a>
+                                        </Link>
                                         ))}
                                     </div>
                                 </div>
@@ -70,10 +97,10 @@ export default function Navbar() {
                             as="a"
                             href={item.href}
                             className={classNames(
-                                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                 'block px-3 py-2 rounded-md text-base font-medium'
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            aria-current={router.asPath === item.href ? 'page' : undefined}
                             >
                             {item.name}
                             </Disclosure.Button>

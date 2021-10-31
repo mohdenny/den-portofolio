@@ -1,9 +1,9 @@
 export const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'Portofolio', href: '#', current: false },
-    { name: 'Skills', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
-    { name: 'About', href: '#', current: false }
+    { name: 'Home', href: '/' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Skills', href: '/skills' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/about' }
 ]
 
 export const logo = {
