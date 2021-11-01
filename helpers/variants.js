@@ -1,11 +1,16 @@
 export const pathVariants = {
     hidden: { rotate: 0, opacity: 0, pathLength: 0 },
-    visible: {
-        rotate: [360, 360],
+    animationOne: {
         opacity: 1,
         pathLength: 1,
-        transition: { duration: 2, type: "spring" },
-    }
+        transition: { duration: 2, ease: "easeInOut" },
+    },
+    animationTwo: {
+        rotate: 360,
+        opacity: 1,
+        pathLength: 1,
+        transition: { duration: 2, ease:"linear", repeat:Infinity },
+    },
 };
 
 export const headlineVariants = {
@@ -29,8 +34,8 @@ export const photoProfileVariants = {
 }
 
 export const squareVariants = {
-    visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 0 }
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 2 } }
 };
 
 export const buttonVariants = {
