@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Mohdenny | Home</title>
+        <title>Mohdenny</title>
         <meta name="keywords" content="Mohdenny Portofolio"/>
       </Head>
       <Component {...pageProps} />
