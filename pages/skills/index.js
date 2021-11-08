@@ -8,7 +8,7 @@ import Header from '../../components/header/Header'
 const Skills = () => {
     return (
         <>
-            <main className="container mx-auto mt-4 h-screen w-full">
+            <main className="container mx-auto mt-4 h-full w-full">
                 <div className="flex justify-center">
                     <Header text={'Skills'} />
                 </div>

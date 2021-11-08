@@ -9,7 +9,7 @@ import Header from '../../components/header/Header'
 const Contact = () => {
     return (
         <>
-            <main className="container mx-auto mt-4 min-h-screen w-full">
+            <main className="container mx-auto mt-4 h-full w-full">
                 <div className="flex justify-center">
                     <Header text={'Contact'} />
                 </div>
