@@ -1,3 +1,4 @@
+import React from 'react'
 import { data } from './config'
 import { motion } from 'framer-motion'
 import { squareVariants } from '../../helpers/variants'
