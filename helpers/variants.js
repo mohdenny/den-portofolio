@@ -18,7 +18,7 @@ export const headlineVariants = {
     animate:{
         opacity: 1,
         transition: {
-            duration: 2, ease: "easeInOut"
+            duration: 1, ease: "easeInOut"
         }
     }
 }
@@ -28,14 +28,16 @@ export const photoProfileVariants = {
     animate:{
         opacity: 1,
         transition: {
-            delay: 2, duration: 2, ease: "easeInOut"
+            delay: 1, duration: 1, ease: "easeInOut"
         }
     }
 }
 
 export const squareVariants = {
-    hidden: { opacity: 0, scale: 0 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 2 } }
+    // hidden: { opacity: 0, scale: 0 },
+    // visible: { opacity: 1, scale: 1, transition: { duration: 2 } }
+    hidden: { opacity: 0, y: 180 },
+    visible: { opacity: 1, y: 0, transition: { duration: 2 } }
 };
 
 export const buttonVariants = {
@@ -45,7 +47,7 @@ hover: {
         boxShadow: "0px 0px 8px rgb(0, 0, 0)",
     transition: {
         duration: 0.4, // duration of keyframe
-        yoyo: Infinity, // number of keyframes and it can have the value Infinity
+        repeat: Infinity, // number of keyframes and it can have the value Infinity
     },
 },
 };

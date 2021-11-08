@@ -5,16 +5,16 @@ import Image from 'next/image'
 import Header from '../../components/header/Header'
 
 
-const Skills = () => {
+const Contact = () => {
     return (
         <>
-            <main className="container mx-auto mt-4 h-screen w-full">
+            <main className="container mx-auto mt-4 h-full w-full">
                 <div className="flex justify-center">
-                    <Header text={'Skills'} />
+                    <Header text={'Contact'} />
                 </div>
 
                 <motion.div 
-                    className="grid grid-cols-4 gap-4 py-4 px-2"
+                    className="grid grid-cols-2 gap-8 py-4 px-2"
                     variants={squareVariants}
                     initial="hidden"
                     animate="visible"
@@ -36,16 +36,16 @@ const Skills = () => {
                                         stiffness: 300 
                                     }}
                                 >
-                                    <div id="card-thumb" className="flex items-center justify-center w-1/3">
-                                        <Image src={require(`../../public/images/${item.thumb}`)} alt="logo-skill" height="80" width="100%" className="object-cover"/>
-                                    </div>
-                                    <div id="content" className="h-full w-full">
+                                    <div id="content" className="h-full w-1/2">
                                         <div className="h-1/2 flex items-center justify-center">
-                                            <p className="text-white text-xl font-roboto-medium">{item.title}</p>
+                                            <p className="text-white text-center text-xl font-roboto-medium">{item.title}</p>
                                         </div>
-                                        <div className="bg-gray-800 rounded-b-xl text-white h-1/2 flex items-center justify-center">
-                                            <p className="text-white font-xl font-roboto-regular">{item.rating}</p>
+                                        <div className="flex items-center justify-center bg-gray-800 rounded-b-xl h-1/2 px-4">
+                                            <p className="text-white text-center text-sm font-roboto-regular">{item.url}</p>
                                         </div>
+                                    </div>
+                                    <div id="card-thumb" className="flex items-center justify-center h-full w-1/2">
+                                        <Image src={require(`../../public/images/${item.thumb}`)} alt="logo-skill" className="object-contain"/>
                                     </div>
                                 </motion.div>
                             )
@@ -57,4 +57,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default Contact
