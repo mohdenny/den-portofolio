@@ -1,5 +1,4 @@
 import React from 'react'
-import { data } from './config'
 import { motion } from 'framer-motion'
 import Header from '../../components/header/Header'
 import Card from '../../components/card/Card'

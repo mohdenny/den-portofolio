@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const data = [
     { id: 1, thumb: 'undraw_Landing_page.png', title: 'HTML', rating: 5 },
     { id: 2, thumb: 'undraw_Landing_page.png', title: 'HTML5', rating: 4 },

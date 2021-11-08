@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const data = [
     { id: 1, thumb: 'logos/ig.png' ,title: 'Instagram', address: '@mohdenny', url: 'https://www.instagram.com/mohdenny'},
     { id: 2, thumb: 'logos/github.png', title: 'Github', address: 'mohdenny', url: 'https://github.com/mohdenny'},
