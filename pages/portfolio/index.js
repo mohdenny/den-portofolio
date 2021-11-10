@@ -21,7 +21,7 @@ const Portfolio = () => {
         </div>
 
         <motion.div 
-          className="grid grid-cols-4 gap-4 py-4 px-2"
+          className="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows-auto gap-4 py-4 px-2"
           variants={squareVariants}
           initial="hidden"
           animate="visible"
