@@ -7,12 +7,17 @@ const Hero = () => {
     return (
         <div id="hero" className="h-36rem w-full">
             <Background />
-            <div className="flex lg:flex-row flex-col transform -translate-y-28rem px-8 w-full">
-                <div className="lg:hidden">
-                    <Image src={data} />
-                </div>
+
+            {/* dekstop */}
+            <div className="flex flex-row hidden lg:inline-flex transform -translate-y-28rem px-8 w-full">
                 <Headline text={data} />
                 <Image src={data} />
+            </div>
+
+            {/* mobile */}
+            <div className="flex flex-col flex-col lg:hidden transform -translate-y-36rem px-8 w-full">
+                <Image src={data} />
+                <Headline text={data} />
             </div>
         </div>
     )

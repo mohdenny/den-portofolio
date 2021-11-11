@@ -13,7 +13,8 @@ module.exports = {
         '36rem': '36rem'
       },
       translate: {
-        '-28rem': '-28rem'
+        '-28rem': '-28rem',
+        '-36rem': '-36rem'
       },
       backgroundImage: {
         'space-img': "url('/images/bg-image.png')",

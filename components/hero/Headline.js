@@ -3,7 +3,7 @@ import { headlineVariants } from '../../helpers/variants'
 
 const HeroHeadline = ({ text }) => {
     return (
-        <div id="headline" className="flex justify-center content-center flex-wrap px-4 h-80 w-full">
+        <div id="headline" className="border-4 flex justify-center content-center flex-wrap px-4 h-80 w-full">
             <div id="text" className="h-auto w-full">
                 <motion.p 
                     className="text-white text-3xl text-center font-roboto-medium"
