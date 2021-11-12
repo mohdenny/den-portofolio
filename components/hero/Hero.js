@@ -9,13 +9,13 @@ const Hero = () => {
             <Background />
 
             {/* dekstop */}
-            <div className="flex flex-row hidden lg:inline-flex transform -translate-y-28rem px-8 w-full">
+            <div className="flex-row hidden lg:inline-flex lg:space-x-4 transform -translate-y-28rem px-8 h-full w-full">
                 <Headline text={data} />
                 <Image src={data} />
             </div>
 
             {/* mobile */}
-            <div className="flex flex-col flex-col lg:hidden transform -translate-y-36rem px-8 w-full">
+            <div className="flex flex-col lg:hidden transform -translate-y-36rem px-8 h-full w-full">
                 <Image src={data} />
                 <Headline text={data} />
             </div>

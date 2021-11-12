@@ -23,7 +23,7 @@ const Home = () => {
       <Hero/>
       <main className="container mx-auto mt-4 h-full w-full">
         <div className="flex justify-center">
-            <Header text={'Article Feed'} />
+            <Header text={'NASA Feed'} />
         </div>
         <motion.div
           ref={ref}
