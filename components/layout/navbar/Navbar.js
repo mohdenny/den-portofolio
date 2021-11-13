@@ -1,11 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { navigation, logo } from './config'
 import { motion } from 'framer-motion'
 import { pathVariants } from '../../../helpers/variants'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+
+const navigation = [
+    { id: 1, name: 'Home', href: '/' },
+    { id: 2, name: 'Portfolio', href: '/portfolio' },
+    { id: 3, name: 'Skills', href: '/skills' },
+    { id: 4, name: 'Contact', href: '/contact' }
+]
+
+const logo = {
+    text : 'MOHDENNY'
+}
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
