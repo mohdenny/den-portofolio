@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { pathVariants } from '../../../helpers/variants'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
