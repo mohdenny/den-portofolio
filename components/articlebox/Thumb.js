@@ -1,8 +1,24 @@
-const Thumb = () => {
+import Image from 'next/image'
+
+const Thumb = ({ data }) => {
     return (
         <>
-            {/* <Image src={require(`../../public/images/${item.thumb}`)} className="object-cover object-center h-full w-1/2" width="100%" height="100%" /> */}
-            <div className="bg-thumb-img bg-cover bg-no-repeat bg-center h-full w-1/2"/>
+            <div className="border-4 flex h-full w-full content-center justify-center">
+                {
+                    data.media_type == 'image' ?
+                        <Image src={data.hdurl} height="100%" width="100%" layout="responsive" objectFit="contain" />
+                    :
+                    <iframe
+                        title="space-video"
+                        src={data.url}
+                        frameBorder="0"
+                        gesture="media"
+                        allow="encrypted-media"
+                        allowFullScreen
+                        className=""
+                    />
+                }
+            </div>
         </>
     )
 }

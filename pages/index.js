@@ -1,14 +1,24 @@
 import React, { useEffect } from 'react'
-import { data } from './api/config'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { squareVariants } from '../helpers/variants'
 import Hero from '../components/hero/Hero'
 import Header from '../components/header/Header'
 import ArticleBox from '../components/articlebox/ArticleBox'
-import Button from '../components/button/Button'
 
-const Home = () => {
+const API_KEY = 'iN5hRjDiWaidJ1VZGdUcncfMcDOLKrDvDiDw1riO'
+const COUNT = 1
+
+export const getStaticProps = async () => {
+  const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=${COUNT}`)
+  const data = await res.json()
+
+  return {
+      props: { datas: data }
+  }
+}
+
+const Home = ({ datas }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -18,12 +28,14 @@ const Home = () => {
     }
   }, [controls, inView])
 
+  console.log(datas)
+
   return (
     <>
       <Hero/>
       <main className="container mx-auto mt-4 h-full w-full">
         <div className="flex justify-center">
-            <Header text={'NASA Feed'} />
+            <Header text={'Astronomy Picture of the Day'} />
         </div>
         <motion.div
           ref={ref}
@@ -31,16 +43,15 @@ const Home = () => {
           initial="hidden"
           variants={squareVariants}
         >
-          <div className="grid lg:grid-cols-3 grid-rows-auto gap-4 py-4 px-2 h-full w-full">
+          <div className="py-4 px-2 h-full w-full border-4">
             {
-              data.map(item => {
+              datas.map(data => {
                 return (
-                  <ArticleBox key={item.id} data={item}/>
+                  <ArticleBox key={data.id} data={data}/>
                 )
               })
             }
           </div>
-          <Button text={'View More'}/>
         </motion.div>
       </main>
     </>

@@ -85,8 +85,8 @@ export default function Navbar() {
                                             <motion.a
                                                 href=''
                                                 className={classNames(
-                                                router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                'px-3 py-2 rounded-md text-sm font-roboto-regular'
+                                                    router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                    'px-3 py-2 rounded-md text-sm font-roboto-regular'
                                                 )}
                                                 aria-current={router.asPath === item.href ? 'page' : undefined}
                                                 whileHover={{ scale: 1.1 }}
