@@ -3,10 +3,10 @@ import Image from 'next/image'
 const Thumb = ({ data }) => {
     return (
         <>
-            <div className="border-4 flex h-full w-full content-center justify-center">
+            <div className="flex h-96 w-full content-center relative justify-center">
                 {
                     data.media_type == 'image' ?
-                        <Image src={data.hdurl} height="100%" width="100%" layout="responsive" objectFit="contain" />
+                        <Image src={data.hdurl} height="100%" width="100%" layout="fill" objectFit="cover" />
                     :
                     <iframe
                         title="space-video"
@@ -15,7 +15,7 @@ const Thumb = ({ data }) => {
                         gesture="media"
                         allow="encrypted-media"
                         allowFullScreen
-                        className=""
+                        className="h-full w-full"
                     />
                 }
             </div>
