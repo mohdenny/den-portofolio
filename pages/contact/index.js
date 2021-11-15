@@ -54,11 +54,11 @@ const Contact = () => {
                                                 </a>
                                             </Link>
                                         </div>
-                                        <div className="flex items-center justify-center bg-gray-800 rounded-b-xl h-1/2 px-4">
+                                        <div className="flex items-center justify-center bg-gray-800 rounded-bl-xl h-1/2 px-4">
                                             <p className="text-white text-center text-sm font-roboto-regular">{item.address}</p>
                                         </div>
                                     </div>
-                                    <div id="card-thumb" className="flex items-center justify-center bg-gray-600 h-full w-1/2">
+                                    <div id="card-thumb" className="flex items-center justify-center rounded-r-xl bg-gray-600 h-full w-1/2">
                                         <Image src={require(`../../public/images/${item.thumb}`)} alt="logo-skill" height="150" width="100%" className="object-contain drop-shadow-lg"/>
                                     </div>
                                 </motion.div>
