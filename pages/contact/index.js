@@ -10,8 +10,9 @@ const data = [
     { id: 2, thumb: 'logos/github.png', title: 'Github', address: 'mohdenny', url: 'https://github.com/mohdenny'},
     { id: 3, thumb: 'logos/linkedin.png', title: 'LinkedIn', address: 'mohammad-denny-379065131', url: 'https://www.linkedin.com/in/mohammad-denny-379065131'},
     { id: 4, thumb: 'logos/gmail.png', title: 'Email', address: 'mohammaddenny94\n@gmail.com', url: 'https://mail.google.com/mail/u/0/?fs=1&to=mohammaddenny94@gmail.com&tf=cm'},
-    { id: 4, thumb: 'logos/twitter.png', title: 'Twitter', address: '@mohdenny', url: 'https://twitter.com/mohdenny'},
-    { id: 4, thumb: 'logos/youtube.png', title: 'Youtube', address: 'Mohammad Denny', url: 'https://www.youtube.com/channel/UCvfQmEp-sxwtGbSqfzyOe4g'}
+    { id: 5, thumb: 'logos/twitter.png', title: 'Twitter', address: '@mohdenny', url: 'https://twitter.com/mohdenny'},
+    { id: 6, thumb: 'logos/youtube.png', title: 'Youtube', address: 'Mohammad Denny', url: 'https://www.youtube.com/channel/UCvfQmEp-sxwtGbSqfzyOe4g'},
+    { id: 7, thumb: 'logos/wa.png', title: 'Whatsapp', address: '08119956XXX', url: 'https://api.whatsapp.com/send?phone=628119956668&text=Hallo Denny, saya ingin bekerjasama dengan Anda :)'}
 ]
 
 const Contact = () => {
