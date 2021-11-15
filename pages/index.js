@@ -43,7 +43,7 @@ const Home = ({ datas }) => {
           initial="hidden"
           variants={squareVariants}
         >
-          <div className="py-4 px-2 h-full w-full border-4">
+          <div className="py-4 px-2 h-full w-full">
             {
               datas.map(data => {
                 return (
