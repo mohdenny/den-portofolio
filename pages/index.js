@@ -28,8 +28,6 @@ const Home = ({ datas }) => {
     }
   }, [controls, inView])
 
-  console.log(datas)
-
   return (
     <>
       <Hero/>
@@ -45,9 +43,9 @@ const Home = ({ datas }) => {
         >
           <div className="py-4 px-2 h-full w-full">
             {
-              datas.map(data => {
+              datas.map((data, index) => {
                 return (
-                  <ArticleBox key={data.id} data={data}/>
+                  <ArticleBox key={index} data={data}/>
                 )
               })
             }
