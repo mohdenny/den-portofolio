@@ -2,11 +2,13 @@ const Footer = () => {
     return (
         <>
             <div id="footer" className="mt-4 h-40 w-full py-2 flex items-center justify-between px-10 text-white font-roboto-regular">
-                <div className="flex items-center justify-start h-full w-full">
-                    <p className="text-2xl">Mohammad Denny<p className="text-sm br">Frontend Developer</p></p>
+                <div className="flex flex-col items-start justify-center h-full w-full">
+                    <p className="text-2xl">Mohammad Denny</p>
+                    <p className="text-sm">Frontend Developer</p>
                 </div>
-                <div className="flex items-center justify-end text-right h-full w-full">
-                    <p className="text-xs">Copyright © 2021<p className="text-sm br">Mohammad Denny</p></p>
+                <div className="flex flex-col items-end justify-center h-full w-full">
+                    <p className="text-xs">Copyright © 2021</p>
+                    <p className="text-sm">Mohammad Denny</p>
                 </div>
             </div>
         </>
