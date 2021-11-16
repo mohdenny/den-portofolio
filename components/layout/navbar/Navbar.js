@@ -70,7 +70,7 @@ export default function Navbar() {
                                             animate={{
                                                 y: -1
                                             }}
-                                            transition={{ delay: 0.2, type: "tween" }}
+                                            transition={{ delay: 1, type: "tween" }}
                                         >
                                             {logo.text}
                                         </motion.div>
