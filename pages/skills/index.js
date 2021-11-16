@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { squareVariants } from '../../helpers/variants'
 import Image from 'next/image'
 import Header from '../../components/header/Header'
+import Rating from '../../components/rating/Rating'
 
 export const data = [
     { id: 1, thumb: 'undraw_Landing_page.png', title: 'HTML', rating: 5 },
@@ -78,7 +79,9 @@ const Skills = () => {
                                             <p className="text-white text-xl font-roboto-medium">{item.title}</p>
                                         </div>
                                         <div className="bg-gray-800 rounded-b-xl text-white h-1/2 flex items-center justify-center">
-                                            <p className="text-white font-xl font-roboto-regular">{item.rating}</p>
+                                            <div className="flex items-center justify-center space-x-2">
+                                                <Rating data={item.rating} />
+                                            </div>
                                         </div>
                                     </div>
                                 </motion.div>
