@@ -6,7 +6,7 @@ const Thumb = ({ data }) => {
             <div className="flex h-96 w-full content-center relative justify-center">
                 {
                     data.media_type == 'image' ?
-                        <Image src={data.hdurl} height="100%" width="100%" layout="fill" objectFit="cover" />
+                        <Image src={data.hdurl} layout="fill" objectFit="cover" />
                     :
                     <iframe
                         title="space-video"
