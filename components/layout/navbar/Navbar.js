@@ -65,7 +65,7 @@ export default function Navbar() {
                                             />
                                         </svg>
                                         <motion.div 
-                                            className="text-white ml-2 font-orbitron text-xl"
+                                            className="text-white ml-2 font-orbitron text-xl hidden sm:block"
                                             initial={{ y: -250 }}
                                             animate={{
                                                 y: -1
