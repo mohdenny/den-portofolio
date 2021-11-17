@@ -9,7 +9,7 @@ export const pathVariants = {
         rotate: 360,
         opacity: 1,
         pathLength: 1,
-        transition: { duration: 2, ease:"linear", repeat:Infinity },
+        transition: { duration: 4, ease:"linear", repeat:Infinity },
     },
 };
 
