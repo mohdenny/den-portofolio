@@ -3,14 +3,16 @@ import Title from './Title'
 import Desc from './Desc'
 
 const LazyComponent = dynamic(() => import('./Thumb'), {
-    loading: () => <p>loading...</p> 
+    loading: () => <p className="text-white ">loading...</p> 
 })
 
 const ArticleBox = ({ data }) => {
     return (
         <div>
             <div className="flex flex-col bg-gray-700 h-full w-full rounded-xl">
+                <div className="flex h-96 w-full content-center relative justify-center">
                     <LazyComponent data={data} />
+                </div>
                 <div id="content" className="h-1/3 w-full">
                     <Title data={data}/>
                     <Desc data={data}/>
