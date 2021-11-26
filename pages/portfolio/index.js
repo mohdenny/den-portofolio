@@ -8,7 +8,7 @@ export const data = [
   { thumb: 'aligbola-thumb.png', title: 'Aligbola', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://alig-bola.web.app/' },
   { thumb: 'gitrepos-thumb.png', title: 'Gitrepos', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://infallible-poincare-6ad975.netlify.app/' },
   { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
-  { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
+  { thumb: 'porto-semantic-thumb.png', title: 'Semantic Web Portfolio', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
   { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' }
 ]
 
