@@ -5,11 +5,11 @@ import Card from '../../components/card/Card'
 import { squareVariants } from '../../helpers/variants'
 
 export const data = [
-  { id: 1, thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.' },
-  { id: 2, thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.' },
-  { id: 3, thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.' },
-  { id: 4, thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.' },
-  { id: 5, thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.' }
+  { thumb: 'aligbola-thumb.png', title: 'Aligbola', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://alig-bola.web.app/' },
+  { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
+  { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
+  { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' },
+  { thumb: 'undraw_Landing_page.png', title: 'Lorem ipsum dolor sit amet', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: '' }
 ]
 
 const Portfolio = () => {
@@ -27,9 +27,9 @@ const Portfolio = () => {
           animate="visible"
         >
           { 
-            data.map(item => {
+            data.map((item, index) => {
               return (
-                <Card key={item.id} data={item} />
+                <Card key={index} data={item} />
               )
             })  
           }
