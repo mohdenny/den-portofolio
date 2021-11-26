@@ -10,7 +10,7 @@ const HeroImage = ({ src }) => {return (
             initial="initial"
             animate="animate"
         >
-            <Image id="image-profile" src={require(`../../public/images/${src.image}`)} className="rounded-full" layout="fill" objectFit="contain"/>
+            <Image id="image-profile" src={require(`../../public/images/${src.image}`)} layout="fill" objectFit="contain"/>
         </motion.div>
     )
 }
