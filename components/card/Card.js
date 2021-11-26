@@ -25,7 +25,7 @@ const Card = ({ data }) => {
         <Desc data={data} />
       </div>
       <div className="py-2 bg-gray-800 rounded-b-xl">
-        <Button text={'Live Demo'} />
+        <Button text={'Live Demo'} url={data.url}/>
       </div>
     </motion.div>
     )
