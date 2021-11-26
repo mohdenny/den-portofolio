@@ -7,10 +7,10 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { id: 1, name: 'Home', href: '/' },
-    { id: 2, name: 'Portfolio', href: '/portfolio' },
-    { id: 3, name: 'Skills', href: '/skills' },
-    { id: 4, name: 'Contact', href: '/contact' }
+    { name: 'Home', href: '/' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Skills', href: '/skills' },
+    { name: 'Contact', href: '/contact' }
 ]
 
 const logo = {
@@ -80,8 +80,8 @@ export default function Navbar() {
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
-                                        <Link key={item.id} href={item.href}>
+                                        {navigation.map((item, index) => (
+                                        <Link key={index} href={item.href}>
                                             <motion.a
                                                 href=''
                                                 className={classNames(
@@ -104,8 +104,8 @@ export default function Navbar() {
 
                     <Disclosure.Panel className="sm:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
-                        {navigation.map((item) => (
-                            <Link key={item.id} href={item.href}>
+                        {navigation.map((item, index) => (
+                            <Link key={index} href={item.href}>
                                 <Disclosure>
                                     <a
                                         href=''
