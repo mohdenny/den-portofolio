@@ -5,6 +5,7 @@ import Card from '../../components/card/Card'
 import { squareVariants } from '../../helpers/variants'
 
 export const data = [
+  { thumb: 'devgram-thumb.png', title: 'Devgram', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://devgram-app.herokuapp.com/' },
   { thumb: 'Bisnis.com-Spirit-Indonesia-thumb.png', title: 'Bisnis.com (Spirit Indonesia!)', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://blissful-perlman-ba1151.netlify.app/' },
   { thumb: 'aligbola-thumb.png', title: 'Aligbola', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://alig-bola.web.app/' },
   { thumb: 'gitrepos-thumb.png', title: 'Gitrepos', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://infallible-poincare-6ad975.netlify.app/' },
