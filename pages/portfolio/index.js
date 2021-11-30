@@ -12,7 +12,6 @@ export const data = [
   { thumb: 'denpic-thumb.png', title: 'Denpic', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://relaxed-hodgkin-3cfeb1.netlify.app/' },
   { thumb: 'laparcom-thumb.png', title: 'Laparcom', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://adoring-keller-e29a10.netlify.app/' },
   { thumb: 'porto-semantic-thumb.png', title: 'Semantic Web Portfolio', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://eloquent-murdock-69203b.netlify.app/' },
-  { thumb: 'porto-semantic-thumb.png', title: 'Semantic Web Portfolio', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a libero quam. Nam pellentesque, mi vulputate rhoncus laoreet, mi nunc commodo nulla, ut convallis purus eros nec massa.', url: 'https://eloquent-murdock-69203b.netlify.app/' },
 ]
 
 const Portfolio = () => {
