@@ -33,7 +33,7 @@ const Home = ({ datas }) => {
       <Hero/>
       <main className="container mx-auto mt-4 h-full w-full">
         <div className="flex justify-center">
-            <Header text={'Astronomy Picture of the Day'} />
+          <Header text={'Astronomy Picture of the Day'} />
         </div>
         <motion.div
           ref={ref}
