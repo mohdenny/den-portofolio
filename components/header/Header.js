@@ -1,8 +1,18 @@
+import { AnimatePresence ,motion } from 'framer-motion'
+
 const Header = ({ text }) => {
     return (
-        <div className="flex items-center justify-center" >
-            <p className="text-white font-roboto-medium text-center text-3xl">{text}</p>
-        </div>
+        <AnimatePresence>
+            <motion.div 
+                className="flex items-center justify-center" 
+                initial={{ opacity: 0, x: 0 }}
+                animate={{ opacity: 1, x:[ 0, -20, 20, -20, 20, 0 ] }}
+                transition={{ duration: 0.5 }}
+                exit={{ opacity: 0 }}
+            >
+                <p className="text-white font-roboto-medium text-center text-3xl">{text}</p>
+            </motion.div>
+        </AnimatePresence>
     )
 }
 
