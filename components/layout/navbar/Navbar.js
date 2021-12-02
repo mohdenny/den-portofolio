@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { pathVariants } from '../../../helpers/variants'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -23,6 +23,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const [ animateLogo, setAnimateLogo ] = useState('animationOne')
+    const [ showMenuMobile, setShowMenuMobile ] = useState(false)
     const router = useRouter()
 
     useEffect(() => {
@@ -44,9 +45,9 @@ export default function Navbar() {
                                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <XIcon className="block h-6 w-6" aria-hidden="true" onClick={() => setShowMenuMobile(false)} />
                                     ) : (
-                                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <MenuIcon className="block h-6 w-6" aria-hidden="true" onClick={() => setShowMenuMobile(true)}/>
                                     )}
                                 </Disclosure.Button>
                             </div>
@@ -81,20 +82,20 @@ export default function Navbar() {
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item, index) => (
-                                        <Link key={index} href={item.href}>
-                                            <motion.a
-                                                href=''
-                                                className={classNames(
-                                                    router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                    'px-3 py-2 rounded-md text-sm font-roboto-regular'
-                                                )}
-                                                aria-current={router.asPath === item.href ? 'page' : undefined}
-                                                whileHover={{ scale: 1.1 }}
-                                                transition={{ type: "spring", stiffness: 300 }}
-                                            >
-                                                {item.name}
-                                            </motion.a>
-                                        </Link>
+                                            <Link key={index} href={item.href}>
+                                                <motion.a
+                                                    href=''
+                                                    className={classNames(
+                                                        router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                        'px-3 py-2 rounded-md text-sm font-roboto-regular'
+                                                    )}
+                                                    aria-current={router.asPath === item.href ? 'page' : undefined}
+                                                    whileHover={{ scale: 1.1 }}
+                                                    transition={{ type: "spring", stiffness: 300 }}
+                                                >
+                                                    {item.name}
+                                                </motion.a>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
@@ -102,26 +103,36 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="sm:hidden">
-                        <div className="px-2 pt-2 pb-3 space-y-1">
-                        {navigation.map((item, index) => (
-                            <Link key={index} href={item.href}>
-                                <Disclosure>
-                                    <a
-                                        href=''
-                                        className={classNames(
-                                            router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                            'block px-3 py-2 rounded-md text-base font-medium'
-                                        )}
-                                        aria-current={router.asPath === item.href ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </a>
+                    
+                    <AnimatePresence>
+                        { showMenuMobile && (
+                            <motion.div 
+                                initial={{ opacity: 0, y: '-100vh', height: 0 }} 
+                                animate={{ opacity: 1, y: 0, height: 'auto' }} 
+                                exit={{ opacity: 0, y: '-100vh', height: 0 }}
+                            >
+                                <Disclosure className="sm:hidden">
+                                    <div className="px-2 pt-2 pb-3 space-y-1">
+                                        {navigation.map((item, index) => (
+                                            <Link key={index} href={item.href}>
+                                                <a
+                                                    href=''
+                                                    className={classNames(
+                                                        router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                        'block px-3 py-2 rounded-md text-base font-medium'
+                                                    )}
+                                                    aria-current={router.asPath === item.href ? 'page' : undefined}
+                                                >
+                                                    {item.name}
+                                                </a>
+                                            </Link>
+                                        ))}
+                                    </div>
                                 </Disclosure>
-                            </Link>
-                        ))}
-                        </div>
-                    </Disclosure.Panel>
+                            </motion.div>
+                            )
+                        }
+                    </AnimatePresence>
                 </>
             )}
         </Disclosure>
