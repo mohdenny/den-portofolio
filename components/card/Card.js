@@ -8,7 +8,7 @@ const Card = ({ data }) => {
   return (
     <motion.div 
       id="card" 
-      className='flex flex-col bg-gray-600 rounded-xl h-80 w-full'
+      className='flex flex-col rounded-xl h-80 w-full'
       whileHover={{ 
         scale: 1.1 , 
         textShadow: "0px 0px 8px rgb(0, 0, 0)",
@@ -20,7 +20,7 @@ const Card = ({ data }) => {
       }}
     >
       <Thumb data={data} />
-      <div id="card-content" className="flex flex-col h-1/2 w-full">
+      <div id="card-content" className="bg-gray-600 flex flex-col h-auto w-full">
         <Title data={data} />
         <Desc data={data} />
       </div>
