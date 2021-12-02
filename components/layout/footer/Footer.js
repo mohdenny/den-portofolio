@@ -7,6 +7,8 @@ const Footer = () => {
                     <p className="text-sm">Frontend Developer</p>
                 </div>
                 <div className="flex flex-col items-end justify-center h-full w-full">
+                    <p className="text-xs">Built with:</p>
+                    <p className="text-sm">NextJS & Tailwindcss</p>
                     <p className="text-xs">Copyright © 2021</p>
                 </div>
             </div>
