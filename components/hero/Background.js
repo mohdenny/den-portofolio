@@ -5,7 +5,9 @@ const HeroBackground = () => {
         <motion.div 
             id="bg-image" 
             className="bg-space-img bg-center bg-no-repeat bg-contain p-4 h-full w-full"
+            initial={{ opacity: 0 }}
             animate={{
+                opacity: 1,
                 x: [-20, -10],
                 y: [0, -30],
             }}
