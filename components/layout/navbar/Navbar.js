@@ -111,7 +111,7 @@ export default function Navbar() {
                                 animate={{ opacity: 1, y: 0, height: 'auto' }} 
                                 exit={{ opacity: 0, y: '-100vh', height: 0 }}
                             >
-                                <Disclosure className="sm:hidden">
+                                <Disclosure className="sm:hidden px-2">
                                     <div className="px-2 pt-2 pb-3 space-y-1">
                                         {navigation.map((item, index) => (
                                             <Link key={index} href={item.href}>
