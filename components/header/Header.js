@@ -6,7 +6,7 @@ const Header = ({ text }) => {
             <motion.div 
                 className="flex items-center justify-center" 
                 initial={{ opacity: 0, x: 0 }}
-                animate={{ opacity: 1, x:[ 0, -20, 20, -20, 20, 0 ] }}
+                animate={{ opacity: 1, x:[ 0, -10, 10, -10, 10, 0 ] }}
                 transition={{ duration: 0.5 }}
                 exit={{ opacity: 0 }}
             >
