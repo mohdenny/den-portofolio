@@ -5,17 +5,17 @@ import { data } from './config'
 
 const Hero = () => {
     return (
-        <div id="hero" className="h-36rem w-full">
-            <Background />
+        <div id="hero" className="lg:h-512px w-full lg:px-120px lg:pt-100px pt-0 px-2 border-2 h-full">
+            <Background/>
 
             {/* dekstop */}
-            <div className="flex-row hidden lg:inline-flex lg:space-x-4 transform -translate-y-28rem px-8 h-full w-full">
+            <div className="flex-row hidden lg:inline-flex lg:space-x-4 transform -translate-y-dekstop h-auto w-full">
                 <Headline text={data} />
                 <Image src={data} />
             </div>
 
             {/* mobile */}
-            <div className="flex flex-col lg:hidden transform -translate-y-36rem px-8 h-full w-full">
+            <div className="flex flex-col lg:hidden transform -translate-y-0 h-full w-full">
                 <Image src={data} />
                 <Headline text={data} />
             </div>

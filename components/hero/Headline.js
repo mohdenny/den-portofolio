@@ -3,17 +3,19 @@ import { headlineVariants } from '../../helpers/variants'
 
 const HeroHeadline = ({ text }) => {
     return (
-        <div id="headline" className="flex justify-center content-center flex-wrap px-4 lg:h-80 sm:h-52 h-96 w-full">
-            <div id="text" className="h-auto w-full">
-                <motion.p 
-                    className="text-white sm:text-3xl text-2xl text-center font-roboto-medium"
-                    variants={headlineVariants}
-                    initial="initial"
-                    animate="animate"
-                >
-                    {text.headline}
-                </motion.p>
-            </div>
+        <div id="headline" className="flex justify-center flex-wrap h-full w-full">
+            <motion.div 
+                id="text" 
+                className="h-auto w-full"
+                variants={headlineVariants}
+                initial="initial"
+                animate="animate"
+            >
+                <p className="text-white text-title font-playfair-display-bold">
+                    {text.title}
+                </p>
+                <p className='text-caption font-poppins-regular text-boulder-65 mt-8'>{text.caption}</p>
+            </motion.div>
         </div>
     )
 }

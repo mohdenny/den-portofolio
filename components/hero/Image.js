@@ -3,14 +3,18 @@ import { motion } from 'framer-motion'
 import { photoProfileVariants } from '../../helpers/variants'
 
 const HeroImage = ({ src }) => {return (
-        <motion.div 
-            id="image" 
-            className="flex justify-center content-center flex-wrap px-4 lg:w-1/3 h-80 overflow-hidden relative w-full"
+        <motion.div className='flex justify-center content-center mx-auto flex-wrap bg-gradient-to-tr from-boston-blue-100 to-white lg:w-1/2 w-full rounded-full p-2 h-avatar-border'
             variants={photoProfileVariants}
             initial="initial"
             animate="animate"
         >
-            <Image id="image-profile" src={require(`../../public/images/${src.image}`)} layout="fill" objectFit="contain"/>
+            <div 
+                id="image" 
+                className="flex justify-center content-center h-avatar-image overflow-hidden relative w-full border-8 rounded-full"
+                
+            >
+                <Image id="image-profile" src={require(`../../public/images/${src.image}`)} layout="fill" objectPosition="center" objectFit="cover"/>
+            </div>
         </motion.div>
     )
 }

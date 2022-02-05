@@ -35,11 +35,11 @@ export default function Navbar() {
     })
 
     return (
-        <Disclosure as="nav" className="bg-dark">
+        <Disclosure as="nav" className="bg-transparent">
             {({ open }) => (
                 <>
-                    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                        <div className="relative flex items-center justify-between h-16">
+                    <div className="max-w-full mx-auto lg:px-120px px-2 sm:px-6 mx-auto">
+                        <div className="relative flex items-center justify-between h-20">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -80,14 +80,14 @@ export default function Navbar() {
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="hidden sm:block sm:ml-6">
-                                    <div className="flex space-x-4">
+                                    <div className="flex space-x-10">
                                         {navigation.map((item, index) => (
                                             <Link key={index} href={item.href}>
                                                 <motion.a
                                                     href=''
                                                     className={classNames(
-                                                        router.asPath === item.href ? 'bg-gray-900 text-white font-roboto-medium font-bold' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                        'px-3 py-2 rounded-md text-sm font-roboto-regular'
+                                                        router.asPath === item.href ? 'bg-gray-35 text-white font-poppins-bold font-bold' : 'text-white bg-gray-65 hover:bg-gray-35 hover:text-white',
+                                                        'px-3 py-2 rounded-md text-sm font-poppins-regular'
                                                     )}
                                                     aria-current={router.asPath === item.href ? 'page' : undefined}
                                                     whileHover={{ scale: 1.1 }}

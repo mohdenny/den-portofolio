@@ -1,4 +1,5 @@
 export const data = {
-    headline: 'Hello, my name is Mohammad Denny. I’m Frontend Developer based in Depok. My Passion is to create an attractive and interactive interface by prioritizing the user experience on Web and Mobile platforms.',
+    title: 'Hello, my name is Mohammad Denny',
+    caption: 'I really like to explore Frontend Developer field and Im also interested in UI/UX design.',
     image: 'profile/image-profile.jpg'
 }
