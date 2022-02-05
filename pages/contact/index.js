@@ -50,12 +50,12 @@ const Contact = () => {
                                         <div className="h-1/2 flex items-center justify-center">
                                             <Link href={item.url}>
                                                 <a target="_blank" rel="noopener noreferrer">
-                                                    <p className="text-white text-center text-xl font-roboto-medium hover:text-gray-300">{item.title}</p>
+                                                    <p className="text-white text-center text-xl font-poppins-medium hover:text-gray-300">{item.title}</p>
                                                 </a>
                                             </Link>
                                         </div>
                                         <div className="flex items-center justify-center bg-gray-800 rounded-bl-xl h-1/2 px-4">
-                                            <p className="text-white text-center text-sm font-roboto-regular">{item.address}</p>
+                                            <p className="text-white text-center text-sm font-poppins-regular">{item.address}</p>
                                         </div>
                                     </div>
                                     <div id="card-thumb" className="flex items-center justify-center rounded-r-xl bg-gray-600 h-full w-1/2">

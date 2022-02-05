@@ -76,7 +76,7 @@ const Skills = () => {
                                     </div> */}
                                     <div id="content" className="h-full w-full text-center">
                                         <div className="h-1/2 flex items-center justify-center py-2">
-                                            <p className="text-white text-xl font-roboto-medium">{item.title}</p>
+                                            <p className="text-white text-xl font-poppins-medium">{item.title}</p>
                                         </div>
                                         <div className="bg-gray-800 rounded-b-xl text-white h-1/2 flex items-center justify-center py-2">
                                             <div className="flex items-center justify-center space-x-2">
