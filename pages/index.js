@@ -29,9 +29,9 @@ const Home = ({ datas }) => {
   }, [controls, inView])
 
   return (
-    <>
+    <div className='flex flex-col'>
       <Hero/>
-      <main className="container mx-auto mt-4 h-full w-full">
+      <main className="container mx-auto mt-4 border-2 h-full w-full">
         <div className="flex justify-center">
           <Header text={'Astronomy Picture of the Day'} />
         </div>
@@ -52,7 +52,7 @@ const Home = ({ datas }) => {
           </div>
         </motion.div>
       </main>
-    </>
+    </div>
   )
 }
 
