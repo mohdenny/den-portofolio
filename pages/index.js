@@ -29,9 +29,9 @@ const Home = ({ datas }) => {
   }, [controls, inView])
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col space-y-8'>
       <Hero/>
-      <main className="container mx-auto mt-4 h-full w-full">
+      <main className="lg:px-120px sm:px-6 px-1 mx-auto h-full w-full">
         <div className="flex justify-center">
           <Header text={'Astronomy Picture of the Day'} />
         </div>

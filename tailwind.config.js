@@ -23,7 +23,12 @@ module.exports = {
         'base-black': '#121212',
         'gray-65': '#656565',
         'gray-35': '#ACACAC',
+        'boulder-100': '#777777',
         'boulder-65': '#A7A7A7',
+        'boulder-35': '#CFCFCF',
+        'rhino-100': '#2C465A',
+        'rhino-65': '#768693',
+        'rhino-35': '#B5BEC5',
         'boston-blue-100': '#3396E1'
       },
       height: {
@@ -43,7 +48,6 @@ module.exports = {
       translate: {
         '-28rem': '-28rem',
         '-dekstop': '-400px',
-        '-responsive': '0'
       },
       backgroundImage: {
         'space-img': "url('/images/bg-image.png')",
@@ -60,6 +64,18 @@ module.exports = {
         'caption': ['28px', {
           letterSpacing: '0.3px',
           lineHeight: '38px',
+        }],
+        'feature': ['34px', {
+          letterSpacing: '0.3px',
+          lineHeight: '44px',
+        }],
+        'title-feature': ['18px', {
+          letterSpacing: '0.3px',
+          lineHeight: '28px',
+        }],
+        'paragraph': ['14px', {
+          letterSpacing: '0.3px',
+          lineHeight: '24px',
         }],
       }
     },

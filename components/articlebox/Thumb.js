@@ -5,7 +5,7 @@ const Thumb = ({ data }) => {
         <>
             {
                 data.media_type == 'image' ?
-                    <Image src={data.hdurl} layout="fill" objectFit="cover" />
+                    <Image src={data.hdurl} className='rounded-t-xl' layout="fill" objectFit="cover" />
                 :
                 <iframe
                     title="space-video"
@@ -14,7 +14,7 @@ const Thumb = ({ data }) => {
                     gesture="media"
                     allow="encrypted-media"
                     allowFullScreen
-                    className="h-full w-full"
+                    className="h-full w-full rounded-t-xl"
                 />
             }
         </>

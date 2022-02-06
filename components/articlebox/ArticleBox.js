@@ -9,7 +9,7 @@ const LazyComponent = dynamic(() => import('./Thumb'), {
 const ArticleBox = ({ data }) => {
     return (
         <div>
-            <div className="flex flex-col bg-gray-700 h-full w-full rounded-xl">
+            <div className="flex flex-col bg-rhino-100 h-full w-full rounded-xl">
                 <div className="flex h-96 w-full content-center relative justify-center">
                     <LazyComponent data={data} />
                 </div>

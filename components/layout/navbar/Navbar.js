@@ -38,7 +38,7 @@ export default function Navbar() {
         <Disclosure as="nav" className="bg-transparent">
             {({ open }) => (
                 <>
-                    <div className="max-w-full mx-auto lg:px-120px px-2 sm:px-6 mx-auto">
+                    <div className="max-w-full mx-auto lg:px-120px px-1 sm:px-6 mx-auto">
                         <div className="relative flex items-center justify-between h-20">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -118,8 +118,8 @@ export default function Navbar() {
                                                 <a
                                                     href=''
                                                     className={classNames(
-                                                        router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                        'block px-3 py-2 rounded-md text-base font-medium'
+                                                        router.asPath === item.href ? 'bg-gray-35 text-white font-poppins-bold font-bold' : 'text-gray-300 hover:bg-gray-65 hover:text-white',
+                                                        'block px-3 py-2 rounded-md text-base font-poppins-regular'
                                                     )}
                                                     aria-current={router.asPath === item.href ? 'page' : undefined}
                                                 >

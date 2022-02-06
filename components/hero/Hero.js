@@ -5,7 +5,7 @@ import { data } from './config'
 
 const Hero = () => {
     return (
-        <div id="hero" className="lg:h-512px w-full lg:px-120px lg:pt-100px pt-0 px-2 h-full">
+        <div id="hero" className="lg:h-512px w-full lg:px-120px sm:px-6 lg:pt-100px pt-0 px-1 h-full">
             <Background/>
 
             {/* dekstop */}

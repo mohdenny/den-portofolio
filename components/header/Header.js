@@ -10,7 +10,7 @@ const Header = ({ text }) => {
                 transition={{ duration: 0.5 }}
                 exit={{ opacity: 0 }}
             >
-                <p className="text-white font-poppins-medium text-center text-3xl">{text}</p>
+                <p className="text-white font-poppins-semibold text-center text-feature">{text}</p>
             </motion.div>
         </AnimatePresence>
     )
