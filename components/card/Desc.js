@@ -33,7 +33,7 @@ const CardDesc = ({ data }) => {
                                 animate={{ opacity: 1, height: 'auto' }} 
                                 exit={{ opacity: 0, height: 0 }}
                             >
-                                <div className=" border-t-2 flex content-center justify-center text-boulder-35 text-paragraph font-poppins-regular break-word text-justify">
+                                <div className=" border-t-2 border-boulder-35 flex content-center justify-center text-boulder-35 text-paragraph font-poppins-regular break-word text-justify">
                                     <p>{data.desc}</p>
                                 </div>
                             </motion.div>

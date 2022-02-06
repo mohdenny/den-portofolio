@@ -50,7 +50,7 @@ const Contact = () => {
                                         <div className="h-1/2 flex items-center justify-center">
                                             <Link href={item.url}>
                                                 <a target="_blank" rel="noopener noreferrer">
-                                                    <p className="text-boulder-65 text-center text-title-feature font-poppins-semibold hover:text-boulder-35">{item.title}</p>
+                                                    <p className="text-boulder-65 text-center text-title-feature font-poppins-semibold font-semibold hover:text-boulder-35">{item.title}</p>
                                                 </a>
                                             </Link>
                                         </div>
