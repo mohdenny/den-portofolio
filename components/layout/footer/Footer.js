@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <div id="footer" className="h-40 w-full py-2 flex items-center justify-between lg:px-120px md:px-6 px-1 text-boulder-65 font-poppins-regular">
+            <div id="footer" className="h-40 w-full py-2 flex items-center justify-between lg:px-120px md:px-6 px-1 text-boulder-100 font-poppins-regular">
                 <div className="flex flex-col items-start justify-center h-full w-full">
                     <p className="text-2xl">Mohammad Denny</p>
                     <p className="text-sm">Frontend Developer</p>

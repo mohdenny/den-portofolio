@@ -43,7 +43,7 @@ export const data = [
 const Skills = () => {
     return (
         <>
-            <main className="container mx-auto mt-4 h-full w-full">
+            <main className="lg:px-120px sm:px-6 pt-0 px-1 mx-auto h-full w-full">
                 <div className="flex justify-center">
                     <Header text={'Skills'} />
                 </div>
@@ -60,7 +60,7 @@ const Skills = () => {
                                 <motion.div 
                                     key={index} 
                                     id="card" 
-                                    className='flex flex-row bg-gray-700 rounded-xl h-auto w-full'
+                                    className='flex flex-row bg-rhino-100 rounded-xl h-auto w-full'
                                     whileHover={{ 
                                         scale: 1.1 , 
                                         textShadow: "0px 0px 8px rgb(0, 0, 0)",
@@ -75,10 +75,10 @@ const Skills = () => {
                                         <Image src={require(`../../public/images/${item.thumb}`)} alt="logo-skill" height="80" width="100%" className="object-cover"/>
                                     </div> */}
                                     <div id="content" className="h-full w-full text-center">
-                                        <div className="h-1/2 flex items-center justify-center py-2">
-                                            <p className="text-white text-xl font-poppins-medium">{item.title}</p>
+                                        <div className="h-1/2 flex items-center justify-center py-2 px-2">
+                                            <p className="text-boulder-65 text-xl font-poppins-medium">{item.title}</p>
                                         </div>
-                                        <div className="bg-gray-800 rounded-b-xl text-white h-1/2 flex items-center justify-center py-2">
+                                        <div className="bg-rhino-65 rounded-b-xl text-boulder-35 h-1/2 flex items-center justify-center py-2">
                                             <div className="flex items-center justify-center space-x-2">
                                                 <Rating data={item.rating} />
                                             </div>

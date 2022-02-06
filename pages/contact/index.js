@@ -18,7 +18,7 @@ const data = [
 const Contact = () => {
     return (
         <>
-            <main className="container mx-auto mt-4 h-full w-full">
+            <main className="lg:px-120px sm:px-6 pt-0 px-1 mx-auto h-full w-full">
                 <div className="flex justify-center">
                     <Header text={'Contact'} />
                 </div>
@@ -35,7 +35,7 @@ const Contact = () => {
                                 <motion.div 
                                     key={item.id} 
                                     id="card" 
-                                    className='flex flex-row bg-gray-700 rounded-xl h-auto w-full'
+                                    className='flex flex-row bg-rhino-100 rounded-xl h-auto w-full'
                                     whileHover={{ 
                                         scale: 1.1 , 
                                         textShadow: "0px 0px 8px rgb(0, 0, 0)",
@@ -50,15 +50,15 @@ const Contact = () => {
                                         <div className="h-1/2 flex items-center justify-center">
                                             <Link href={item.url}>
                                                 <a target="_blank" rel="noopener noreferrer">
-                                                    <p className="text-white text-center text-xl font-poppins-medium hover:text-gray-300">{item.title}</p>
+                                                    <p className="text-boulder-65 text-center text-title-feature font-poppins-semibold hover:text-boulder-35">{item.title}</p>
                                                 </a>
                                             </Link>
                                         </div>
-                                        <div className="flex items-center justify-center bg-gray-800 rounded-bl-xl h-1/2 px-4">
-                                            <p className="text-white text-center text-sm font-poppins-regular">{item.address}</p>
+                                        <div className="flex items-center justify-center bg-boulder-65 rounded-bl-xl h-1/2 px-4">
+                                            <p className="text-boulder-35 text-center text-paragraph font-poppins-regular">{item.address}</p>
                                         </div>
                                     </div>
-                                    <div id="card-thumb" className="flex items-center justify-center rounded-r-xl bg-gray-600 h-full w-1/2">
+                                    <div id="card-thumb" className="flex items-center justify-center rounded-r-xl bg-boulder-35 h-full w-1/2">
                                         <Image src={require(`../../public/images/${item.thumb}`)} alt="logo-skill" height="150" width="100%" className="object-contain drop-shadow-lg"/>
                                     </div>
                                 </motion.div>
