@@ -78,7 +78,7 @@ const Skills = () => {
                                         <div className="h-1/2 flex items-center justify-center py-2 px-2">
                                             <p className="text-boulder-35 text-xl font-poppins-semibold font-semibold">{item.title}</p>
                                         </div>
-                                        <div className="bg-rhino-65 rounded-b-xl text-boulder-65 h-1/2 flex items-center justify-center py-2">
+                                        <div className="bg-rhino-65 rounded-b-xl text-boulder-35 h-1/2 flex items-center justify-center py-2">
                                             <div className="flex items-center justify-center space-x-2">
                                                 <Rating data={item.rating} />
                                             </div>

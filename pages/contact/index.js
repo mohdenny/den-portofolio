@@ -55,7 +55,7 @@ const Contact = () => {
                                             </Link>
                                         </div>
                                         <div className="flex items-center justify-center bg-boulder-65 rounded-bl-xl h-1/2 px-4">
-                                            <p className="text-boulder-65 text-center text-paragraph font-poppins-regular">{item.address}</p>
+                                            <p className="text-boulder-35 text-center text-paragraph font-poppins-regular">{item.address}</p>
                                         </div>
                                     </div>
                                     <div id="card-thumb" className="flex items-center justify-center rounded-r-xl bg-boulder-35 h-full w-1/2">
