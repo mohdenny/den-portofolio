@@ -8,11 +8,12 @@ const Card = ({ data }) => {
   return (
     <motion.div 
       id="card" 
-      className='flex flex-col rounded-xl h-80 w-full'
+      className='flex flex-col rounded-xl h-auto w-full'
       whileHover={{ 
         scale: 1.1 , 
-        textShadow: "0px 0px 8px rgb(0, 0, 0)",
-        boxShadow: "0px 0px 8px rgb(0, 0, 0)" 
+        textShadow: "0px 0px 2px rgb(0, 0, 0)",
+        boxShadow: "0px 0px 8px rgb(0, 0, 0)",
+        marginBottom: '20px'
       }}
       transition={{ 
         type: "spring", 
