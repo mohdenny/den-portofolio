@@ -19,7 +19,7 @@ const CardDesc = ({ data }) => {
     return (
         <div id="desc" className="bg-rhino-65 flex flex-col justify-center px-4 py-2 h-full w-full">
             <button 
-                className="text-boulder-35 flex flex-row justify-between gap-4 text-paragraph font-poppins-regular break-word text-justify hover:text-white"
+                className="text-boulder-65 flex flex-row justify-between gap-4 text-paragraph font-poppins-regular break-word text-justify hover:text-boulder-35"
                 onClick={() => setIsDisplay(!isDisplay)}
             >
                 <span>Description</span>
@@ -33,7 +33,7 @@ const CardDesc = ({ data }) => {
                                 animate={{ opacity: 1, height: 'auto' }} 
                                 exit={{ opacity: 0, height: 0 }}
                             >
-                                <div className=" border-t-2 border-boulder-35 flex content-center justify-center text-boulder-35 text-paragraph font-poppins-regular break-word text-justify">
+                                <div className=" border-t-2 border-boulder-65 flex content-center justify-center text-boulder-65 text-paragraph font-poppins-regular break-word text-justify">
                                     <p>{data.desc}</p>
                                 </div>
                             </motion.div>
