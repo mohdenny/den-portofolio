@@ -20,11 +20,11 @@ const Card = ({ data }) => {
       }}
     >
       <Thumb data={data} />
-      <div id="card-content" className="bg-gray-600 flex flex-col h-auto w-full">
+      <div id="card-content" className="bg-rhino-100 flex flex-col h-auto w-full">
         <Title data={data} />
         <Desc data={data} />
       </div>
-      <div className="py-2 bg-gray-800 rounded-b-xl">
+      <div className="py-2 bg-rhino-35 rounded-b-xl">
         <Button text={'Live Demo'} url={data.url}/>
       </div>
     </motion.div>

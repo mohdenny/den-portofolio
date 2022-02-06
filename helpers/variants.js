@@ -43,8 +43,8 @@ export const squareVariants = {
 export const buttonVariants = {
 hover: {
     scale: 1.1,
-        textShadow: "0px 0px 8px rgb(0, 0, 0)",
-        boxShadow: "0px 0px 8px rgb(0, 0, 0)",
+        // textShadow: "0px 0px 8px rgb(0, 0, 0)",
+        // boxShadow: "0px 0px 8px rgb(0, 0, 0)",
     transition: {
         duration: 0.4, // duration of keyframe
         repeat: Infinity, // number of keyframes and it can have the value Infinity

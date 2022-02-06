@@ -5,7 +5,7 @@ const Button = ({ text, url }) => {
     return (
         <div className="flex items-center justify-center">
           <motion.a 
-            className="bg-blue-500 h-full w-24 text-white rounded-xl text-center py-1 hover:bg-blue-600 "
+            className="border-boston-blue-100 border-2 font-poppins-regular h-full w-24 text-boston-blue-100 rounded-xl text-center py-1 hover:border-boston-blue-65 hover:text-boston-blue-65 "
             variants={buttonVariants}
             whileHover="hover"
             href={url}
