@@ -13,7 +13,7 @@ const Card = ({ data }) => {
         scale: 1.1 , 
         textShadow: "0px 0px 2px rgb(0, 0, 0)",
         boxShadow: "0px 0px 8px rgb(0, 0, 0)",
-        marginBottom: '20px'
+        marginBottom: '15px'
       }}
       transition={{ 
         type: "spring", 
