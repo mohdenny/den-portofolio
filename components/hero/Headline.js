@@ -12,9 +12,13 @@ const HeroHeadline = ({ text }) => {
                 animate="animate"
             >
                 <p className="text-white text-title font-playfair-display-bold">
-                    {text.title}
+                    {text.title1}
                 </p>
-                <p className='text-caption font-poppins-regular text-boulder-65 mt-8'>{text.caption}</p>
+                <p className="text-white text-title font-playfair-display-bold">
+                    {text.title2}
+                </p>
+                <p className='text-caption font-poppins-regular text-boulder-65 mt-8'>{text.caption1}</p>
+                <p className='text-caption font-poppins-regular text-boulder-65 mt-8'>{text.caption2}</p>
             </motion.div>
         </div>
     )
