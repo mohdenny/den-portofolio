@@ -29,7 +29,7 @@ const Home = ({ datas }) => {
   }, [controls, inView])
 
   return (
-    <div className='flex flex-col space-y-8'>
+    <div className='flex flex-col space-y-20'>
       <Hero/>
       <main className="lg:px-120px sm:px-6 px-1 mx-auto h-full w-full">
         <div className="flex justify-center">
