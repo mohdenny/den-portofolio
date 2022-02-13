@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { squareVariants } from '../helpers/variants'
 import Hero from '../components/hero/Hero'
 import Header from '../components/header/Header'
-import ArticleBox from '../components/articlebox/ArticleBox'
+import FeatureBox from '../components/featurebox/FeatureBox'
 
 const API_KEY = 'iN5hRjDiWaidJ1VZGdUcncfMcDOLKrDvDiDw1riO'
 const COUNT = 1
@@ -45,7 +45,7 @@ const Home = ({ datas }) => {
             {
               datas.map((data, index) => {
                 return (
-                  <ArticleBox key={index} data={data}/>
+                  <FeatureBox key={index} data={data}/>
                 )
               })
             }

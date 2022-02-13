@@ -6,7 +6,7 @@ const LazyComponent = dynamic(() => import('./Thumb'), {
     loading: () => <p className="text-white ">loading...</p> 
 })
 
-const ArticleBox = ({ data }) => {
+const FeatureBox = ({ data }) => {
     return (
         <>
             <div className="flex md:flex-row flex-col items-center justify-center h-full w-full rounded-xl">
@@ -22,4 +22,4 @@ const ArticleBox = ({ data }) => {
     )
 }
 
-export default ArticleBox
+export default FeatureBox
